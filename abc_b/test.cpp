@@ -3,6 +3,9 @@ using namespace std;
 
 
 int main() {
-    cout << -1 % 10 << endl;
+    string test = "hello";
+    test.erase(test.begin());
+    cout << test << endl;
+    cout << test.size() << endl;
     return 0;
 }
