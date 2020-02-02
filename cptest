@@ -1,0 +1,8 @@
+#!/bin/zsh
+contest=$1
+problemname=$2
+oj dl "https://${contest}${problemname:0:3}.contest.atcoder.jp/tasks/${contest}${problemname:0:3}_${problemname:3}"
+g++ -Wall -std=c++14 ./$contest/$problemname.cpp
+oj test
+rm -rf a.out
+rm -rf test
