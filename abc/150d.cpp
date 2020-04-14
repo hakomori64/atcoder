@@ -1,45 +1,43 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-typedef long long ll;
+#include <bits/stdc++.h>
+#define rep(i, n) for(ll i = 0; i < n; i++)
+#define repr(i, n) for(ll i = n; i >= 0; i--)
+#define inf LLONG_MAX
+#define all(v) v.begin(), v.end()
 using namespace std;
+typedef long long ll;
+typedef vector<ll> vll;
+typedef vector<vll> vvll;
 
-ll gcd(ll a, ll b) {
-    if (b == 0) {
-        return a;
-    }
-    return gcd(b, a % b);
+
+ll gcd(ll x, ll y) {
+    if (y == 0) return x;
+    else return gcd(y, x % y);
 }
 
-int main() {
-    ll n, m;
-    cin >> n >> m;
-    vector<ll> vec(n);
-
-    for (int i = 0; i < n; i++) {
-        ll num = 0;
-        cin >> num;
-        vec.at(i) = num / 2;
+int main()
+{
+    ll n, m; cin >> n >> m;
+    vll a(n);
+    rep(i, n) {
+        ll num; cin >> num; num /= 2;
+        a[i] = num;
     }
 
-    ll cand = vec.at(0);
-    for (int i = 1; i < n; i++) {
-        cand =  vec.at(i) / gcd(vec.at(i), cand) * cand;
-    }
-
-    ll count = 0;
-    for (ll num = cand; num <= m; num += cand) {
-        bool flag = true;
-        for (auto elem : vec) {
-            cout << num * 2 / elem << endl;
-            if ((ll)(num * 2 / elem) % 2 == 0) {
-                flag = false;
-                break;    
-            }
+    while (a[0] % 2 == 0) {
+        for (int i = 0; i < n; ++i) {
+            if (a[i] % 2 != 0) {cout << 0 << endl; return 0;}
+            a[i] /= 2;
         }
-        if (flag) count++;
+        m /= 2;
     }
-    
-    cout << count << endl;
+
+    for (int i = 0; i < n; i++) if (a[i] % 2 == 0) {cout << 0 << endl; return 0;}
+
+    ll lcm = 1;
+    for (int i = 0; i < n; ++i) {
+        lcm = lcm / gcd(lcm, a[i]) * a[i];
+        if (lcm > m) {cout << 0 << endl; return 0;};
+    }
+    cout << (m / lcm + 1) / 2 << endl;
     return 0;
 }

@@ -1,21 +1,27 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
+#define rep(i, n) for(ll i = 0; i < n; i++)
+#define repr(i, n) for(ll i = n; i >= 0; i--)
+#define inf LLONG_MAX
+#define all(v) v.begin(), v.end()
 using namespace std;
+typedef long long ll;
+typedef vector<ll> vll;
+typedef vector<vll> vvll;
 
-
-int main() {
-	int n;
+int main()
+{
+	ll n;
 	cin >> n;
-	int count = 0;
-	for (int a = 1; a <= n; a++) {
-		for (int b = 1; b <= n; b++) {
-			string aa = to_string(a);
-			string bb = to_string(b);
-			if (aa[0] == bb[bb.size()-1] && aa[aa.size()-1] == bb[0]) {
-				count++;
-			}
-		}
+	vvll c(10, vll(10));
+	for (int i = 1; i <= n; i++) {
+		string _i = to_string(i);
+		c[_i[0] - '0'][_i[_i.size()-1] - '0']++;
 	}
-	cout << count << endl;
+
+	ll cnt = 0;
+	rep(i, 10) rep(j, 10) {
+		cnt += c[i][j] * c[j][i];
+	}
+	cout << cnt << endl;
 	return 0;
 }

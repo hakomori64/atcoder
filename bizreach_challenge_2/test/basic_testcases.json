@@ -1,0 +1,182 @@
+[
+ {
+  "input": "in/basic/case01.in",
+  "output": "out/basic/case01.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 1",
+  "description": "[基本実装] 通常のFizzBuzzで、mが1の時に正答できる"
+ },
+ {
+  "input": "in/basic/case02.in",
+  "output": "out/basic/case02.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 2",
+  "description": "[基本実装] 通常のFizzBuzzで、mが2の時に正答できる"
+ },
+ {
+  "input": "in/basic/case03.in",
+  "output": "out/basic/case03.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 3",
+  "description": "[基本実装] 通常のFizzBuzzで、mが3の時に正答できる"
+ },
+ {
+  "input": "in/basic/case04.in",
+  "output": "out/basic/case04.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 4",
+  "description": "[基本実装] 通常のFizzBuzzで、mが4の時に正答できる"
+ },
+ {
+  "input": "in/basic/case05.in",
+  "output": "out/basic/case05.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 5",
+  "description": "[基本実装] 通常のFizzBuzzで、mが5の時に正答できる"
+ },
+ {
+  "input": "in/basic/case06.in",
+  "output": "out/basic/case06.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 6",
+  "description": "[基本実装] 通常のFizzBuzzで、mが6の時に正答できる"
+ },
+ {
+  "input": "in/basic/case07.in",
+  "output": "out/basic/case07.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 7",
+  "description": "[基本実装] 通常のFizzBuzzで、mが7の時に正答できる"
+ },
+ {
+  "input": "in/basic/case08.in",
+  "output": "out/basic/case08.out",
+  "description_en": "[basic case] For a normal FizzBuzz, the solution is correct when m is 15",
+  "description": "[基本実装] 通常のFizzBuzzで、mが15の時に正答できる"
+ },
+ {
+  "input": "in/basic/case09.in",
+  "output": "out/basic/case09.out",
+  "description_en": "[basic case] The solution is correct even if the expected string values from FizzBuzz are changed (m=29)",
+  "description": "[基本実装] FizzBuzzから、出力すべき文字列が変わった時にも正答できる(m=29)"
+ },
+ {
+  "input": "in/basic/case10.in",
+  "output": "out/basic/case10.out",
+  "description_en": "[basic case] The solution is correct even if the expected string values from FizzBuzz are changed (m=30)",
+  "description": "[基本実装] FizzBuzzから、出力すべき文字列が変わった時にも正答できる(m=30)"
+ },
+ {
+  "input": "in/basic/case11.in",
+  "output": "out/basic/case11.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=55)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=55)"
+ },
+ {
+  "input": "in/basic/case12.in",
+  "output": "out/basic/case12.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=56)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=56)"
+ },
+ {
+  "input": "in/basic/case13.in",
+  "output": "out/basic/case13.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=59)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=59)"
+ },
+ {
+  "input": "in/basic/case14.in",
+  "output": "out/basic/case14.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=60)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=60)"
+ },
+ {
+  "input": "in/basic/case15.in",
+  "output": "out/basic/case15.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=61)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=61)"
+ },
+ {
+  "input": "in/basic/case16.in",
+  "output": "out/basic/case16.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=3, m=62)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=3,m=62)"
+ },
+ {
+  "input": "in/basic/case17.in",
+  "output": "out/basic/case17.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=4, m=1150)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=4,m=1150)"
+ },
+ {
+  "input": "in/basic/case18.in",
+  "output": "out/basic/case18.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=4, m=1155)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=4,m=1155)"
+ },
+ {
+  "input": "in/basic/case19.in",
+  "output": "out/basic/case19.out",
+  "description_en": "[basic case] The solution is correct even if the number of pairs of given numbers and character strings is increased (n=4, m=1156)",
+  "description": "[基本実装] FizzBuzzで与えられる数字と文字列のペアが増えても正答できる(n=4,m=1156)"
+ },
+ {
+  "input": "in/basic/case20.in",
+  "output": "out/basic/case20.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not in ascending order (n=4, m=210)",
+  "description": "[基本実装] 与えられる数が昇順でなくても正答できる(n=4,m=210)"
+ },
+ {
+  "input": "in/basic/case21.in",
+  "output": "out/basic/case21.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not in ascending order (n=4, m=21)",
+  "description": "[基本実装] 与えられる数が昇順でなくても正答できる(n=4,m=21)"
+ },
+ {
+  "input": "in/basic/case22.in",
+  "output": "out/basic/case22.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not in ascending order (n=4, m=14)",
+  "description": "[基本実装] 与えられる数が昇順でなくても正答できる(n=4,m=14)"
+ },
+ {
+  "input": "in/basic/case23.in",
+  "output": "out/basic/case23.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not coprime numbers (n=4, m=6)",
+  "description": "[基本実装] 与えられる数が互いに素でなくても正答できる(n=4,m=6)"
+ },
+ {
+  "input": "in/basic/case24.in",
+  "output": "out/basic/case24.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not coprime numbers (n=4, m=4)",
+  "description": "[基本実装] 与えられる数が互いに素でなくても正答できる(n=4,m=4)"
+ },
+ {
+  "input": "in/basic/case25.in",
+  "output": "out/basic/case25.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not coprime numbers (n=4, m=24)",
+  "description": "[基本実装] 与えられる数が互いに素でなくても正答できる(n=4,m=24)"
+ },
+ {
+  "input": "in/basic/case26.in",
+  "output": "out/basic/case26.out",
+  "description_en": "[basic case] The solution is correct even if the given numbers are not coprime numbers (n=4, m=2000)",
+  "description": "[基本実装] 与えられる数が互いに素でなくても正答できる(n=4,m=2000)"
+ },
+ {
+  "input": "in/basic/case27.in",
+  "output": "out/basic/case27.out",
+  "description_en": "[basic case] The solution is correct if 20 is assigned to the value of a[i] (n=4, m=2000)",
+  "description": "[基本実装] a[i]が20となるときも正答できる(n=4,m=2000)"
+ },
+ {
+  "input": "in/basic/case28.in",
+  "output": "out/basic/case28.out",
+  "description_en": "[basic case] The solution is correct if 20 is assigned to the value of a[i] (n=4, m=1)",
+  "description": "[基本実装] a[i]が20となるときも正答できる(n=4,m=1)"
+ },
+ {
+  "input": "in/basic/case29.in",
+  "output": "out/basic/case29.out",
+  "description_en": "[basic case] The solution is correct if 1 is assigned to the value of a[i] (n=4, m=2000)",
+  "description": "[基本実装] a[i]が1となるときも正答できる(n=4,m=2000)"
+ },
+ {
+  "input": "in/basic/case30.in",
+  "output": "out/basic/case30.out",
+  "description_en": "[basic case] The solution is correct if 1 is assigned to the value of a[i] (n=4, m=1)",
+  "description": "[基本実装] a[i]が1となるときも正答できる(n=4,m=1)"
+ }
+]

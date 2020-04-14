@@ -1,35 +1,35 @@
-#include <iostream>
-#include <map>
-#include <pair>
-#include <vector>
+#include <bits/stdc++.h>
+#define rep(i, n) for(ll i = 0; i < n; i++)
+#define repr(i, n) for(ll i = n; i >= 0; i--)
+#define inf LLONG_MAX
+#define all(v) v.begin(), v.end()
 using namespace std;
+typedef long long ll;
+typedef vector<ll> vll;
+typedef vector<vll> vvll;
 
-bool is_win(char me, char opponent) {
-    if (
-            (me == 'r' && opponent == 's') &&
-            (me == 's' && opponent == 'p') &&
-            (me == 'p' && opponent == 'r')
-       ) return true;
-    else return false;
-}
 
-char win_hand(char opponent) {
-    if (opponent == 'r') return 's';
-    if (opponent == 's') return 'p';
-    if (opponent == 'p') return 'r';
-}
+int main()
+{
+    ll n, k; cin >> n >> k;
+    map<char, ll> mp;
+    cin >> mp['s'] >> mp['p'] >> mp['r'];
+    string s; cin >> s;
+    vector<bool> iswin(n);
+    ll score = 0;
+    rep(i, n) {
+        if (i < k) {
+            iswin[i] = true;
+            score += mp[s[i]];
+            continue;
+        }
 
-int main() {
-    int n, k;
-    int r, s, p;
-    string t;
-    cin >> n >> k;
-    cin >> r >> s >> p;
-    cin >> t;
-    int sum = 0;
-    for (int base = 0; base < k; base++) {
-        for (int index = base; index < n; i += k) {
-            if (index == base)
+        if (s[i] == s[i-k] && iswin[i-k]) iswin[i] = false;
+        else {
+            iswin[i] = true;
+            score += mp[s[i]];
         }
     }
+    cout << score << endl;
+    return 0;
 }

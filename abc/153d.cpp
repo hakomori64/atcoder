@@ -14,14 +14,13 @@ int main()
 {
     ll h;
     cin >> h;
-    ll num = 0;
+    ll num = 1;
     ll count = 0;
-    while (h > 1) {
-        num += pow(2, count);
+    while (h > 0) {
+        count += num;
+        num *= 2;
         h /= 2;
-        count++;
     }
-    num += pow(2, count);
-    cout << num << endl;
+    cout << count << endl;
     return 0;
 }

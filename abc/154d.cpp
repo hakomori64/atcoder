@@ -14,17 +14,17 @@ int main()
     ll n, k; cin >> n >> k;
     vector<double> p(n+1);
     p[0] = 0;
-    for (int i = 0; i < n; i++) {
-        ll num; cin >> num;
-        p[i+1] = p[i] + (double)(num + 1) / 2;
+    rep(i, n) {
+        double num; cin >> num;
+        p[i + 1] = p[i] + (num + 1) / 2;
     }
-    // for (auto elem : p) cout << elem << " "; cout << endl;
 
     double max_num = 0;
-    for (int i = 0; i < n - k + 1; i++) {
-        max_num = max(max_num, p[i+k] - p[i]);
+    rep(i, n - k + 1) {
+        max_num = max(p[i + k] - p[i], max_num);
     }
-    printf("%.12lf\n", max_num);
+
+    printf("%.12f\n", max_num);
 
     return 0;
 }

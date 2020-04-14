@@ -1,0 +1,77 @@
+[
+ {
+  "input": "in/basic/case01.in",
+  "output": "out/basic/case01.out",
+  "description": "[基本実装] 小文字のみの入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case02.in",
+  "output": "out/basic/case02.out",
+  "description": "[基本実装] 大文字小文字を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case03.in",
+  "output": "out/basic/case03.out",
+  "description": "[基本実装] 大文字のみの入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case04.in",
+  "output": "out/basic/case04.out",
+  "description": "[基本実装] 小文字のみの入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case05.in",
+  "output": "out/basic/case05.out",
+  "description": "[エンコードが必要な入力を扱う実装] 半角スペース( )を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case06.in",
+  "output": "out/basic/case06.out",
+  "description": "[エンコードが必要な入力を扱う実装] ダブルクオート(\")を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case07.in",
+  "output": "out/basic/case07.out",
+  "description": "[エンコードが必要な入力を扱う実装] アポストロフ(')を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case08.in",
+  "output": "out/basic/case08.out",
+  "description": "[エンコードが必要な入力を扱う実装] アットマーク(@)を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case09.in",
+  "output": "out/basic/case09.out",
+  "description": "[エンコードが必要な入力を扱う実装] ハイフン(-)を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case10.in",
+  "output": "out/basic/case10.out",
+  "description": "[エンコードが必要な入力を扱う実装] プラス(+)を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case11.in",
+  "output": "out/basic/case11.out",
+  "description": "[基本実装] 小文字のみの入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case12.in",
+  "output": "out/basic/case12.out",
+  "description": "[基本実装] 大文字のみの入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case13.in",
+  "output": "out/basic/case13.out",
+  "description": "[基本実装] 大文字小文字を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case14.in",
+  "output": "out/basic/case14.out",
+  "description": "[エンコードが必要な入力を扱う実装] 半角スペース( )とドット(.)を含む入力値に対して正しいハッシュ値が出力できる"
+ },
+ {
+  "input": "in/basic/case15.in",
+  "output": "out/basic/case15.out",
+  "description": "[エンコードが必要な入力を扱う実装] 複数の記号を含む入力値に対して正しいハッシュ値が出力できる"
+ }
+]
